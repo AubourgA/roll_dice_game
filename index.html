@@ -8,19 +8,88 @@
     <meta name="description" content="Jeu du lancer de dé avec 2 joueurs">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
+  
+   <div class="container">
 
 
+        <header class="game__start">
+            <button class="btn start">
+                <i class="fa-light fa-plus"></i> NEW GAME
+            </button>
+        </header>
 
+        
+        <main class="game__wrapper">
+      
+                <section class="player curr">
+
+                    <div class="player__title">
+                        <h2 class=" player__circle">PLAYER 1</h2>
+                    </div>
+                    <div class="player__global">
+                        <p class="player__global-points">50</p> 
+                    </div>
+                    <div class="player__current">
+                        <h3>CURRENT</h3>
+                        <p class="player__current-points">25</p>
+                    </div>
+
+             
+                    </section>
+                
+
+
+            <section class="game-play ">
+                <div></div>
+                <div class="dice">
+                    <img src="./assets/img/face1.svg" alt="dice">
+                </div>
+                <div class="action">
+                    <button class="btn roll">
+                        <i class="fa-solid fa-arrows-rotate"></i>ROLL DICE
+                    </button>
+                    <button class="btn hold">
+                        <i class="fa-solid fa-download"></i>HOLD
+                    </button>
+                </div>
+            </section>
+
+
+            <section class="player curr">
+
+                <div class="player__title">
+                    <h2 class=" player__circle">PLAYER 2</h2>
+                    <div class="circle"></div>
+                </div>
+                <div class="player__global">
+                    <p class="player__global-points">50</p> 
+                </div>
+                <div class="player__current">
+                    <h3>CURRENT</h3>
+                    <p class="player__current-points">25</p>
+                </div>
+
+         
+                </section>
+        </main>
+        
     
+    </div>
+
+
+
+
+  
 
     <!-- Librairies JS -->
    
-    <script src="assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>
