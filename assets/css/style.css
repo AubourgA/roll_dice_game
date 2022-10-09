@@ -24,6 +24,7 @@
     vertical-align: start;
     font-size: clamp(0.7rem, 3vw, 1.5rem);
     color: var(--color-txt);
+    cursor: pointer;
 }
 
 
