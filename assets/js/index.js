@@ -12,6 +12,7 @@ const player2Current = document.querySelector('.p2__current');
 const player1 = document.querySelector('.p1');
 const player2 = document.querySelector('.p2');
 const dice = document.querySelector('.dice img')
+const winningModal = document.querySelector('.modal');
 /* VAR */
 let current_score = 0;
 let isGame = false;
@@ -103,7 +104,8 @@ function hold(){
 function winner(playerActive) {
    
     if ( parseInt( document.querySelector(`.p${playerActive}__score`).innerText) >= 100) {
-        alert("Joueur :" + playerActive + " a gagné");
+        winningModal.classList.add('active');
+        document.querySelector('.winner').innerText = ` Joueur ${playerActive} a gagné `;
         isGame = false;
     }
 }
@@ -114,6 +116,7 @@ function winner(playerActive) {
 function gameStart() {
    
     resetScore();
+    winningModal.classList.remove('active');
     isGame = true;
 
     player1.classList.add('active');
